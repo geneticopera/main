@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header,
+        .main,
+        .and,
+        .and_1,
+        .aside,
+        .foot {
+            border: 1px solid red;
+        }
+
+        .header,
+        .footer,
+        .main {
+            flex: 1 0 content;
+        }
+
+        .header {
+            background-color: rgb(235, 241, 185);
+            height: 10vh;
+        }
+
+        .main,
+        .div,
+        .aside {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 30vh;
+            width: 60%;
+            align-content: flex-end;
+            background-color: antiquewhite;
+        }
+
+
+        .and_1 {
+            align-self: center;
+            flex-wrap: wrap;
+            width: 95%;
+            align-items: flex-end;
+            background-color: blanchedalmond;
+        }
+
+        aside {
+            width: 30%;
+            background-color: bisque;
+        }
+
+        .and {
+            height: 10vh;
+            flex-grow: 1;
+            align-items: flex-end;
+            width: 30vh;
+            flex-wrap: wrap;
+            background-color: blanchedalmond;
+        }
+
+
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            height: 10vh;
+            align-items: stretch;
+            border: 1px solid green;
+            background-color: rgb(204, 248, 248);
+        }
+
+        .foot {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        Шапка страницы
+    </header>
+    <div class="div">
+        <main class="main">Основная часть
+            <p class="and">Еще 1</p>
+            <p class="and">Еще 2</p>
+            <p class="and_1">Еще 3</p>
+        </main>
+        <aside class="aside">Боковая часть</aside>
+    </div>
+    <footer class="footer">
+        <p class="foot">Секция футера 1</p>
+        <p class="foot">Секция футера 2</p>
+        <p class="foot">Секция футера 3</p>
+        <p class="foot">Секция футера 4</p>
+    </footer>
+</body>
+
+</html>
